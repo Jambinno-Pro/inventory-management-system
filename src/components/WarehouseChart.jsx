@@ -1,0 +1,4 @@
+import React from 'react';
+import { MoreHorizontal } from 'lucide-react';
+const data=[['Cape Town Warehouse','35%','6,472','seg-a'],['Johannesburg Warehouse','25%','4,621','seg-b'],['Durban Warehouse','20%','3,698','seg-c'],['Harare Warehouse','15%','2,771','seg-d'],['Other','5%','930','seg-e']];
+export default function WarehouseChart(){return <article className="card warehouse-card"><div className="card-header"><h2>Stock by Warehouse</h2><button className="more-button"><MoreHorizontal size={19}/></button></div><div className="warehouse-body"><div className="donut"><div className="donut-center"><strong>18,492</strong><span>Total Stock</span></div></div><div className="warehouse-list">{data.map(([name,pct,num,cls])=><div className="warehouse-row" key={name}><i className={`dot ${cls}`}/><div><strong>{name}</strong><span>{pct} ({num})</span></div></div>)}</div></div></article>}
