@@ -1,25 +1,21 @@
-# StockFlow Frontend
+# StockFlow — Next.js + TypeScript + Tailwind
 
-React + Vite frontend for the StockFlow Enterprise Inventory Management System.
+Version 1 rebuild of the original StockFlow React/Vite dashboard.
 
-## Features
-- React component architecture
-- Responsive dashboard
-- Light/Dark theme switcher
-- Theme preference saved to localStorage
-- Inventory overview chart
-- Stock by warehouse visualization
-- Low stock alerts
-- Recent transactions table
-- Search UI
-- Lucide icons
-- Inter font from Google Fonts
+## Stack
+- Next.js App Router
+- TypeScript
+- Tailwind CSS v4
+- Lucide React
+- Recharts
 
 ## Run
-
 ```bash
 npm install
 npm run dev
 ```
 
-The project is intentionally frontend-only. API/database integration can be added later without changing the dashboard structure.
+Then open http://localhost:3000
+
+## Current scope
+This version establishes the responsive application shell, sidebar, topbar, theme toggle, dashboard cards, charts, low-stock alerts and transaction table. Data is intentionally still demo data; backend/database integration comes next.
